@@ -1,10 +1,9 @@
 package com.sacms.sacmsood.Models;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class ClubAdvisor extends User{
+public class ClubAdvisor extends User {
     private static ArrayList<ClubAdvisor> advisorList=new ArrayList<ClubAdvisor>();
 
     public ClubAdvisor(String id, String fName, String lName, String email) {
