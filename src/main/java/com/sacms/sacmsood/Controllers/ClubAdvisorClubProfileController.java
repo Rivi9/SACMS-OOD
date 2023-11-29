@@ -1,4 +1,4 @@
-package com.sacms.sacmsood.Controllers;
+package com.sacms.sacms.Controllers;
 
 import com.sacms.sacmsood.MainApp;
 import com.sacms.sacmsood.Models.Club;
@@ -26,7 +26,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import static com.sacms.sacmsood.Models.mysqlConnector.execute;
+import static com.sacms.sacms.Models.mysqlConnector.execute;
 
 public class ClubAdvisorClubProfileController implements Initializable {
     public Club club;
@@ -91,7 +91,7 @@ public class ClubAdvisorClubProfileController implements Initializable {
     public void report2(ActionEvent event) throws IOException {
 //        generateClubAvtivities
         ClubActivitiesReportGenerator.generateClubAvtivities();
-        FXMLLoader root =new FXMLLoader(MainApp.class.getResource("fxmls/create_club.fxml"));
+        FXMLLoader root =new FXMLLoader(MainApp.class.getResource("fxmls/clubAdvisor-clubs.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root.load(), 990, 660);
         stage.setScene(scene);
@@ -103,7 +103,7 @@ public class ClubAdvisorClubProfileController implements Initializable {
         clubName.setText(club.getClubName());
         clubAdvisor.setText("Club advisor : "+club.getAdvisor().getfName()+" "+club.getAdvisor().getlName());
         Description.setText(club.getDescription());
-        report1.setTooltip(new Tooltip("Generate Club Activities Report"));
+        report1.setTooltip(new Tooltip("Generate Club Membership Report"));
         viewEvents();
     }
 
