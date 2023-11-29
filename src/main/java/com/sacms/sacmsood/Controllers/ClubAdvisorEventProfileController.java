@@ -1,7 +1,7 @@
 package com.sacms.sacmsood.Controllers;
 
-import com.sacms.sacms.Models.ClubEvent;
-import com.sacms.sacms.Models.ClubMembershipReportGenerator;
+import com.sacms.sacmsood.Models.ClubEvent;
+import com.sacms.sacmsood.Models.ClubMembershipReportGenerator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static com.sacms.sacms.Models.mysqlConnector.execute;
+import static com.sacms.sacmsood.Models.mysqlConnector.execute;
 
 public class ClubAdvisorEventProfileController implements Initializable {
     public SideBarController sideBarController;
