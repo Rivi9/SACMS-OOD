@@ -17,7 +17,7 @@
             </AnchorPane>
             <AnchorPane layoutX="181.0" prefHeight="613.0" prefWidth="795.0" styleClass="left_panel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Text fx:id="eventName" layoutX="28.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Nut November" wrappingWidth="369.13671875">
+                  <Text fx:id="eventName" layoutX="28.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Science Day" wrappingWidth="369.13671875">
                      <font>
                         <Font name="Franklin Gothic Medium" size="45.0" />
                      </font></Text>
@@ -26,7 +26,7 @@
                         <Font name="Franklin Gothic Medium" size="23.0" />
                      </font>
                   </Text>
-                  <Text fx:id="description" layoutX="398.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Nut November is an annual internet challenge where participants abstain from ejaculation for the entire month of November. The challenge is often seen as a test of willpower and self-control, and it has gained popularity in recent years due to its widespread discussion on social media." wrappingWidth="369.13671875">
+                  <Text fx:id="description" layoutX="398.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Science Day" wrappingWidth="369.13671875">
                      <font>
                         <Font size="15.0" />
                      </font>
