@@ -1,4 +1,4 @@
-package com.sacms.sacms.Controllers;
+package com.sacms.sacmsood.Controllers;
 
 import com.sacms.sacmsood.MainApp;
 import com.sacms.sacmsood.Models.Club;
@@ -26,7 +26,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import static com.sacms.sacms.Models.mysqlConnector.execute;
+import static com.sacms.sacmsood.Models.mysqlConnector.execute;
 
 public class ClubAdvisorClubProfileController implements Initializable {
     public Club club;
