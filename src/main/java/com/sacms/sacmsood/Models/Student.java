@@ -1,6 +1,6 @@
 package com.sacms.sacmsood.Models;
 
-public class Student extends User{
+public class Student extends User {
     private int level;
 
     public Student(String stdId, String fName, String lName, int level, String email){
@@ -10,6 +10,13 @@ public class Student extends User{
         this.level = level;
         this.setEmail(email);
     }
-}
 
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+}
 

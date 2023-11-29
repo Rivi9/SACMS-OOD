@@ -13,7 +13,7 @@ public class PopupController implements Initializable {
     public Button popupOk,popupCancel;
     public TextField passwordField;
     public Text errorMsg;
-    
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         errorMsg.setVisible(false);

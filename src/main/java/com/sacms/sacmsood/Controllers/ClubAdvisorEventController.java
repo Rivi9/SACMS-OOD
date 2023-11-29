@@ -46,14 +46,6 @@ public class ClubAdvisorEventController implements Initializable {
         stage.show();
     }
 
-//    public void onCreateEventBtnClick(ActionEvent event) throws IOException {
-//        FXMLLoader root =new FXMLLoader(MainApp.class.getResource("fxmls/create_event.fxml"));
-//        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        Scene scene = new Scene(root.load(), 990, 660);
-//        stage.setScene(scene);
-//        stage.show();
-//    }
-
     private void viewEvents() {
 
         eventPaneController.listVbox.getChildren().clear();

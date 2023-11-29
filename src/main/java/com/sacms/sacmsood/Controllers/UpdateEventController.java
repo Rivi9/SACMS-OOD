@@ -3,6 +3,7 @@ package com.sacms.sacmsood.Controllers;
 import com.sacms.sacmsood.MainApp;
 import com.sacms.sacmsood.Models.Club;
 import com.sacms.sacmsood.Models.ClubAdvisor;
+import com.sacms.sacmsood.Models.ClubEvent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,13 +23,14 @@ import java.util.ResourceBundle;
 
 import static com.sacms.sacmsood.Models.mysqlConnector.execute;
 
-public class EventCreationController implements Initializable {
+public class UpdateEventController implements Initializable {
+    public ClubEvent event;
     private ClubAdvisor advisor =(ClubAdvisor) MainApp.user;
     @FXML
     private Text welcomeText;
 
     @FXML
-    private Button CreateEventBtn;
+    private Button UpdateEventBtn;
 
     @FXML
     private TextField eventName;
@@ -78,7 +80,8 @@ public class EventCreationController implements Initializable {
     private Label error;
 
     @FXML
-    public void onCreateBtnClick(ActionEvent event) throws IOException {
+    public void onUpdateBtnClick(ActionEvent event) throws IOException {
+
         // Retrieve data from the form
         String name = eventName.getText();
         Club selectedClub = clubName.getValue();
@@ -92,6 +95,7 @@ public class EventCreationController implements Initializable {
         String clubId = selectedClub.getClubId();
 
         // Retrieve day, month, and year from the respective TextFields
+
         String day = eventDate.getText();
         String month = eventMonth.getText();
         String year = eventYear.getText();
@@ -122,6 +126,7 @@ public class EventCreationController implements Initializable {
             error.setVisible(false); // Hide the error label
 
             // Insert data into the database
+            execute("DELETE FROM `events` WHERE `EventID`='"+this.event.getEventId()+"'");
             execute("INSERT INTO `events`(`EventName`, `ClubID`, `EventDate`, `StartTime`, `EndTime`, `Location`, " +
                     "`Description`, `EventPassword`, `EventType`) VALUES ('" + name + "','" + clubId + "','" + date + "', '" +
                     start + "', '" + end + "','" + loc + "', '" + desc + "','" + password + "', '" + type + "')");
@@ -146,5 +151,8 @@ public class EventCreationController implements Initializable {
 
         eventType.getItems().addAll("Event","Meeting","Activity");
 
+    }
+
+    public void init() {
     }
 }
