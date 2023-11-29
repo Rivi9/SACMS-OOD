@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="660.0" prefWidth="990.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sacms.sacms.Controllers.StudentEventProfileController">
+
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../styles/student-dash.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <AnchorPane prefHeight="635.0" prefWidth="195.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <fx:include fx:id="sideBar" source="sub/side-bar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+            <AnchorPane layoutX="181.0" prefHeight="613.0" prefWidth="795.0" styleClass="left_panel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="eventName" layoutX="28.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Nut November" textAlignment="CENTER" wrappingWidth="718.7366943359375">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="45.0" />
+                     </font></Text>
+                  <Text fx:id="type" layoutX="28.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type : Club Activity" wrappingWidth="718.7366943359375">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="description" layoutX="28.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Nut November is an annual internet challenge where participants abstain from ejaculation for the entire month of November. The challenge is often seen as a test of willpower and self-control, and it has gained popularity in recent years due to its widespread discussion on social media." wrappingWidth="718.7366943359375" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="320.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="club" layoutX="28.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Club : Leo Club " wrappingWidth="718.7366943359375">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="location" layoutX="28.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location : GP Squre" wrappingWidth="718.7366943359375">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="time" layoutX="28.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time : 7.00 PM - 8.00PM" wrappingWidth="718.7366943359375">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+
+      <AnchorPane layoutY="25.0" prefHeight="25.0" prefWidth="840.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fx:include fx:id="topBar" source="sub/top-bar.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../styles/student-dash.css" />
+      <URL value="@../styles/find_clubs.css" />
+   </stylesheets>
+
+
+
+</AnchorPane>

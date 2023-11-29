@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="660.0" prefWidth="990.0" stylesheets="@../../styles/popup.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sacms.sacms.Controllers.PopupController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="175.0" prefWidth="350.0">
+         <children>
+            <AnchorPane id="alertBox" prefHeight="200.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="popupLabel" layoutX="34.0" layoutY="39.0" prefHeight="34.0" prefWidth="305.0" text="Enter Password :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox id="SaveActionBar" layoutX="211.0" layoutY="129.0" spacing="10.0">
+                     <children>
+                        <Button  id="saveBtn" fx:id="popupOk" defaultButton="true" mnemonicParsing="false" prefWidth="75.0" text="Ok" />
+                        <Button  id="cancelBtn" fx:id="popupCancel" cancelButton="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefWidth="75.0" text="Cancel" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="passwordField" layoutX="34.0" layoutY="75.0" prefHeight="26.0" prefWidth="258.0" />
+                  <Text fx:id="errorMsg" fill="RED" layoutX="34.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

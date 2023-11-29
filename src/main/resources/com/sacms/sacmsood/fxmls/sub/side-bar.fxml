@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="635.0" prefWidth="195.0" styleClass="side_panal" stylesheets="@../../styles/side-bar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sacms.sacms.Controllers.SideBarController">
+   <children>
+      <ToggleButton fx:id="homeBtn" mnemonicParsing="false" onAction="#onHomeClick" prefHeight="60.0" prefWidth="195.0" styleClass="side_btn" text="Home" wrapText="true">
+         <toggleGroup>
+            <ToggleGroup fx:id="sidebar" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="clubBtn" layoutX="10.0" layoutY="385.0" mnemonicParsing="false" onAction="#onClubsClick" prefHeight="60.0" prefWidth="195.0" styleClass="side_btn" text="Clubs" toggleGroup="$sidebar" />
+      <ToggleButton fx:id="eventBtn" layoutX="10.0" layoutY="445.0" mnemonicParsing="false" onAction="#onEventsClick" prefHeight="60.0" prefWidth="195.0" styleClass="side_btn" text="Events" toggleGroup="$sidebar" />
+      <ToggleButton fx:id="signoutBtn" layoutX="10.0" layoutY="505.0" mnemonicParsing="false" onAction="#onSignoutClick" prefHeight="60.0" prefWidth="195.0" styleClass="side_btn" text="Sign out" toggleGroup="$sidebar" />
+   </children>
+   <padding>
+      <Insets top="135.0" />
+   </padding>
+</VBox>

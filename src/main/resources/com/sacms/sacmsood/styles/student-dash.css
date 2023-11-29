@@ -1,0 +1,86 @@
+.upcoming{
+    -fx-background-color: black;
+}
+
+.clubs{
+    -fx-background-color: black;
+}
+
+.header{
+    -fx-background-color: white;
+}
+
+.side_panal{
+    -fx-background-color: white;
+}
+
+.side_btn{
+     -fx-background-color: white;
+     -fx-font-family: "Franklin Gothic Medium";
+     -fx-font-size: 27;
+ }
+
+.left_panel{
+    -fx-background-color: #f6f6f6;
+}
+
+.header_text {
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-size: 38;
+}
+
+.upcoming_events {
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-size: 23;
+}
+
+.table_col{
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-size: 15;
+
+}
+
+.event{
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);
+    -fx-end-margin: 5px;
+}
+.event:hover{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);
+    -fx-end-margin: 5px;
+}
+
+.club{
+    -fx-background-color: #f6f6f6;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 2, 0, 0, 0);
+    -fx-end-margin: 5px;
+}
+
+.club_name{
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-size: 20;
+}
+
+.view_all{
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-size: 15;
+}
+
+.btn:disabled{
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-font-family: "Franklin Gothic Medium";
+}
+
+.btn{
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-font-family: "Franklin Gothic Medium";
+}

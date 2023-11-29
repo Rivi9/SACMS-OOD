@@ -1,0 +1,15 @@
+#alertBox{
+    -fx-background-radius: 10;
+    -fx-opacity: 5;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, black,10,0,0,0);
+    -fx-text-fill: #000000;
+    -fx-font-family: "Franklin Gothic Medium";
+}
+
+Button{
+    -fx-background-color: #000000;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-font-family: "Franklin Gothic Medium";
+}

@@ -1,0 +1,25 @@
+/*For the top bar*/
+#topBar, #topBar Button{
+    -fx-max-height: 25px;
+    -fx-background-color: #242424;
+    -fx-opacity: 0.8;
+    -fx-icon-color: #939aa3;
+    -fx-background-radius: 0 ;
+}
+
+#topBar Button:hover .topBarIcon{
+    -fx-icon-color: #ffffff;
+}
+
+#topBar Button:hover{
+    -fx-background-color: #1e1d1d;
+}
+
+#closeButton:hover{
+    -fx-opacity: 1;
+    -fx-background-color: red;
+}
+
+.button{
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="660.0" prefWidth="990.0" style="-fx-background-color: black;" stylesheets="@../styles/student-dash.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sacms.sacms.Controllers.StudentEventController">
+
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../styles/student-dash.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <AnchorPane prefHeight="635.0" prefWidth="195.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <fx:include fx:id="sideBar" source="sub/side-bar.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </AnchorPane>
+            <AnchorPane layoutX="181.0" prefHeight="613.0" prefWidth="795.0" styleClass="left_panel" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text layoutX="38.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header_text" text="Events" textAlignment="CENTER" wrappingWidth="719.13671875" />
+                  <ScrollPane hbarPolicy="NEVER" hmax="0.0" layoutY="95.0" prefHeight="514.0" prefWidth="795.0" stylesheets="@../styles/scroll-pane.css" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="95.0">
+                     <content>
+                        <VBox prefHeight="206.0" prefWidth="774.0">
+                           <fx:include fx:id="eventPane" source="sub/list.fxml" AnchorPane.topAnchor="10.0" />
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutY="25.0" prefHeight="25.0" prefWidth="840.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <fx:include fx:id="topBar" source="sub/top-bar.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      </AnchorPane>
+
+   </children>
+
+
+
+</AnchorPane>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="mainPane" prefWidth="795.0" styleClass="left_panel" stylesheets="@../../styles/student-dash.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sacms.sacms.Controllers.ListController">
+   <children>
+      <VBox fx:id="listVbox" layoutX="19.0" layoutY="95.0" prefWidth="728.0" spacing="10.0" />
+   </children>
+</AnchorPane>

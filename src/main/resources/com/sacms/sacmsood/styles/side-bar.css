@@ -1,0 +1,16 @@
+.side_panal{
+    -fx-background-color: #222831;
+}
+
+.side_btn{
+    -fx-background-color: #222831;
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-font-size: 27;
+    -fx-text-fill: white;
+}
+
+.side_btn:selected{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+
+}
