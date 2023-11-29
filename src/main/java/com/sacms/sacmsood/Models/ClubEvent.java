@@ -10,9 +10,9 @@ public class ClubEvent {
     private Date date;
     private Club club;
     private Time startTime,endTime;
-    private String location,description,password;
+    private String location,description,password,type;
 
-    public ClubEvent(String eventId, String eventName, Date date, Club club, Time startTime, Time endTime, String location, String description, String password) {
+    public ClubEvent(String eventId, String eventName, Date date, Club club, Time startTime, Time endTime, String location, String description, String password, String type) {
         this.eventId = eventId;
         this.eventName = eventName;
         this.date = date;
@@ -22,6 +22,7 @@ public class ClubEvent {
         this.location = location;
         this.description = description;
         this.password = password;
+        this.type=type;
     }
 
     public String getEventId() {
@@ -94,6 +95,14 @@ public class ClubEvent {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
 

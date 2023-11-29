@@ -1,8 +1,8 @@
 package com.sacms.sacmsood.Controllers;
 
-import com.sacms.sacms.MainApp;
-import com.sacms.sacms.Models.ClubEvent;
-import com.sacms.sacms.Models.Student;
+import com.sacms.sacmsood.MainApp;
+import com.sacms.sacmsood.Models.ClubEvent;
+import com.sacms.sacmsood.Models.Student;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import static com.sacms.sacms.Models.mysqlConnector.execute;
+import static com.sacms.sacmsood.Models.mysqlConnector.execute;
 
 public class StudentEventController implements Initializable {
     private Student student=(Student) MainApp.user;

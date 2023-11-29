@@ -60,10 +60,22 @@ public class Club {
         members.remove(student);
     }
 
-    public void scheduleEvent(ClubEvent event) {
+    public void addEvent(ClubEvent event) {
         events.add(event);
     }
 
+    public void remove(ClubEvent event){
+        events.remove(event);
+    }
+
+    public ClubEvent peekEvents(String id){
+        for (int i = 0; i < events.size(); i++) {
+            if(events.get(i).getEventId().equals(id)){
+                return events.get(i);
+            }
+        }
+        return null;
+    }
 
     public ClubAdvisor getAdvisor() {
         return advisor;
@@ -80,6 +92,10 @@ public class Club {
     public void setDescription(String description) {
         this.description = description;
     }
-}
 
+    @Override
+    public String toString() {
+        return clubName;
+    }
+}
 

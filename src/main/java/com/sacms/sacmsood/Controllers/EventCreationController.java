@@ -1,8 +1,8 @@
 package com.sacms.sacmsood.Controllers;
 
-import com.sacms.sacms.MainApp;
-import com.sacms.sacms.Models.Club;
-import com.sacms.sacms.Models.ClubAdvisor;
+import com.sacms.sacmsood.MainApp;
+import com.sacms.sacmsood.Models.Club;
+import com.sacms.sacmsood.Models.ClubAdvisor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static com.sacms.sacms.Models.mysqlConnector.execute;
+import static com.sacms.sacmsood.Models.mysqlConnector.execute;
 
 public class EventCreationController implements Initializable {
     private ClubAdvisor advisor =(ClubAdvisor) MainApp.user;
